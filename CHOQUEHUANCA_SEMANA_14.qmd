@@ -1,0 +1,57 @@
+---
+title: "CHOQUEHUANCA_SEMANA_14"
+format: html
+editor: visual
+---
+
+## Quarto
+
+REALIZAR EL ANÁLISIS UNIVARIADO, MULTIVARIADO Y DE REGRESIÓN
+
+```{r}
+#IMPORTAMOS EL ARCHIVO CON EL CUAL SE VA A TRABAJAR 
+data<- read_csv("C:/Users/Leonardo/Downloads/s13_hemodialisis.csv")
+```
+
+```{}
+```
+
+REALIZAMOS EL ANALISIS UNIVARIADO
+
+```{r}
+#REALIZAMOS EL ANALISIS UNIVARIADO
+set.seed(123)
+Edad <- sample(20:70, 30, replace = TRUE)
+Diabetic <-70 + 0.9*Edad + rnorm(30, 0, 8)
+datos <- data.frame(Edad, Diabetic)
+```
+
+REALIZAMOS EL ANALISIS MULTIVARIADO
+
+```{r}
+#REALIZAMOS EL ANALISIS MULTIVARIADO 
+set.seed(123)
+n <-80
+IMC <- rnorm(n, 27, 4)
+Edad <-rnorm(n, 45, 10)
+Diabetic <- 95 + 2.1*IMC +0.85*Edad +1.45*n+ rnorm(n, 0.15)
+datos <- data.frame(IMC, Edad, n)
+```
+
+REALIZAMOS EL MODELO MULTIPLE
+
+```{r}
+#REALIZAMOS EL MODELO MULTIPLE 
+modelo <- lm(n~ IMC + Edad, data = datos)
+summary(modelo)
+```
+
+REALIZAMOS EL ANALISIS DE REGRESION
+
+```{r}
+#REALIZAMOS EL ANALISIS DE REGRESION 
+set.seed(123)
+n<- 120
+IMC <-rnorm(n, 27, 4)
+Edad<- rnorm(n, 45, 10)
+```
