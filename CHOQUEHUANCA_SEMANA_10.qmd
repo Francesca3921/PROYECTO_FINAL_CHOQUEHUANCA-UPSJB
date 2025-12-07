@@ -1,0 +1,29 @@
+---
+title: "CHOQUEHUANCA_SEMANA_10"
+format: html
+editor: visual
+---
+
+## Quarto
+
+```{r}
+#CALCULAR LAS MEDIDAS DE TENDENCIA CENTRAL 
+#IMPORTAMOS DATA 
+data <- read_csv("C:/Users/Leonardo/Downloads/almac_sangre.csv")
+```
+
+```{r}
+#CALCULAMOS LA TENDENCIA CENTRAL 
+#MEDIDA ARITMETICA 
+mean(data$Edad)
+```
+
+```{r}
+#CONTINUAMOS CON LA MEDIANA 
+median(data$Edad)
+```
+
+```{r}
+#finalizamos con la moda 
+mode_edad <-names(sort(table(data$Edad),decreasing= TRUE))
+```
