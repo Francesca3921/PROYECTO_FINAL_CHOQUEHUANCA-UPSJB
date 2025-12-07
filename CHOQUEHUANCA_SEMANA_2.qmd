@@ -1,0 +1,24 @@
+---
+title: "CHOQUEHUANCA_SEMANA_2"
+format: html
+editor: visual
+---
+
+## Quarto
+
+CREACION DE PROYECTO
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+#COMO CREAR UN PROYECTO EN RSTUDIO 
+#En la parte superior derecha seleccionamos new project , selccionamos nuevo 
+#ingresamos a la carpeta data y ubicamos formato cvs
+#luego visualizamos el proyecto 
+```
+
+```{r}
+
+```
