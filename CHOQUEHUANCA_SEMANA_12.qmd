@@ -1,0 +1,43 @@
+---
+title: "CHOQUEHUANCA_SEMANA_12"
+format: html
+editor: visual
+---
+
+## Quarto
+
+```{r}
+#MEDIDAS DE DISPERSION 
+#VARIANZA
+var(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#DESVIACION ESTANDAR 
+sd(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#RANGO
+range(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#RANGO INTERCUARTILICO
+IQR(data$Edad,na.rm= TRUE)
+```
+
+```{r}
+#MEDIDAS DE POSICION
+quantile(data$Edad,probs=c(0.25,0.50,0.75,0.90),na.rm = TRUE)
+```
+
+```{r}
+#VER LAS PRIMERAS 6 FILAS DE LA DATA 
+head(data)
+```
+
+```{r}
+#RESUMEN DE TODAS LAS VARIABLES 
+summary(data)
+```
